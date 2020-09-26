@@ -8,4 +8,8 @@ router.get('/', costumerController.getAll);
 
 router.get('/:costumerId', costumerController.getById);
 
+router.put('/:costumerId', costumerController.put);
+
+router.delete('/:costumerId', costumerController.delete);
+
 module.exports = router;

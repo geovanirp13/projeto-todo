@@ -20,5 +20,5 @@ const costumerRoute = require('./src/routes/costumer-route');
 app.use('/api/costumers/', costumerRoute);
 
 app.listen(port, () => {
-  console.log(`Servidor execuTando na porta ${port}`);
+  console.log(`Servidor executando na porta ${port}`);
 });
