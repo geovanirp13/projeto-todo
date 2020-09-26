@@ -63,7 +63,7 @@ exports.put = async (req, res) => {
 
 exports.delete = async (req, res) => {
   try {
-      await repositoryCostumer.delete(req.body.id)
+      await repositoryCostumer.delete(req.params.costumerId)
       res.status(200).send({
           message: "Costumer removido com sucesso."
       });
@@ -73,4 +73,4 @@ exports.delete = async (req, res) => {
           erro: error
       });
   }
-}
+};

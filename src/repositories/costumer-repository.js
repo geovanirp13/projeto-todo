@@ -26,5 +26,5 @@ exports.put = async(id, data) => {
 };
 
 exports.delete = async(id) => {
-  await Costumer.findOneAndRemove(id);
+  await Costumer.findByIdAndRemove(id);
 };
